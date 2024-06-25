@@ -1,0 +1,322 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  box-shadow: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+.title-reset {
+  margin: 0;
+}
+
+.descr-reset {
+  margin: 0;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.btn-reset {
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 484px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+:root {
+  --bauhaus: #404040;
+  --usc-gold: #ffcc00;
+  --cascading-white: #f6f6f6;
+  --nīlā-blue: #0057ff;
+  --white: #ffffff;
+  --palomino-gold: #d7ac00;
+  --metal-fringe: #827f73;
+  --btn-bg-hover: rgba(215, 172, 0, 0.4);
+  --patrician-purple: #73547d;
+}
+
+
+.body {
+  background-color: var(--cascading-white);
+}
+
+.header__logo {
+  position: relative;
+  background-color: var(--bauhaus);
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.header__logo-box {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.header__logo-box:hover {
+  opacity: 0.5;
+}
+
+.header__logo-box:active {
+  opacity: 0.5;
+}
+
+.header__logo-box:focus-visible {
+  opacity: 0.5;
+}
+
+.header__logo-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header__logo-text {
+  background-color: var(--usc-gold);
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: 10px;
+}
+
+.header__logo-text-span {
+  font-size: 34px;
+  line-height: 50px;
+  font-weight: 400;
+  color: var(--bauhaus);
+}
+
+.header__logo-img {
+  width: 58px;
+  height: 47px;
+}
+
+.content__container {
+  background-color: var(--white);
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.content__title {
+  text-align: center;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: var(--bauhaus);
+}
+
+.content__descr {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--bauhaus);
+  font-family: "Open Sans", sans-serif;
+}
+
+.content__descr--mt {
+  margin-top: 15px;
+}
+
+.content__descr-name {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--bauhaus);
+  font-family: "Open Sans", sans-serif;
+}
+
+.content__descr-link {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: var(--nīlā-blue);
+  font-family: "Open Sans", sans-serif;
+  text-decoration: underline;
+  transition: opacity .3s ease-in-out;
+}
+
+.content__descr-link:hover {
+  opacity: 0.5;
+}
+
+.content__descr-link:active {
+  opacity: 0.5;
+}
+
+.content__descr-link:focus-visible {
+  opacity: 0.5;
+  outline: none;
+}
+
+.content__btns {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content__btn {
+  padding: 7px 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  color: var(--bauhaus);
+  background-color: var(--usc-gold);
+  border-radius: 7px;
+  border: 1px solid var(--usc-gold);
+  transition: border .3s ease-in-out, background-color .3s ease-in-out;
+}
+
+.content__btn:hover {
+  border: 1px solid var(--palomino-gold);
+  background-color: var(--btn-bg-hover);
+}
+
+.content__btn:active {
+  border: 1px solid var(--palomino-gold);
+  background-color: var(--btn-bg-hover);
+}
+
+.content__btn:focus-visible {
+  border: 1px solid var(--palomino-gold);
+  background-color: var(--btn-bg-hover);
+  outline: none;
+}
+
+.content__descr-bottom {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--metal-fringe);
+  font-family: "Open Sans", sans-serif;
+}
+
+.content__subtitle {
+  margin-top: 15px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--patrician-purple);
+  text-align: center;
+}
+
+.content__social-list {
+  margin-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.content__social-link {
+  transition: opacity .3s ease-in-out;
+}
+
+.content__social-link:hover {
+  opacity: 0.5;
+}
+
+.content__social-link:active {
+  opacity: 0.5;
+}
+
+.content__social-link:focus-visible {
+  opacity: 0.5;
+  outline: none;
+}
+
+@media (max-width: 429px) {
+  .content__title {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .content__descr {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .content__btn {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .content__subtitle {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
